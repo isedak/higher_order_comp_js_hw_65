@@ -1,0 +1,128 @@
+.PostDetails-background {
+    width: 100%;
+    min-height: calc(100vh - 62px);
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(106, 164, 239, 0.5), rgba(0, 0, 0, 0.8)), url("../../assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 62px;
+}
+
+.PostDetails-scroll-box {
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.PostDetails-column {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+.PostDetails-time-text {
+    font-size: 15px;
+    color: gray;
+    font-weight: 700;
+    margin: 0;
+}
+
+.PostDetails-title {
+    font-size: 25px;
+    overflow: hidden;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.btn-delete {
+    border: 1px solid rgb(117, 47, 47);
+    background-color: rgb(117, 47, 47);
+}
+
+.btn-edit {
+    border: 1px solid rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50);
+}
+
+.btn-edit:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.btn-delete:hover {
+    border: 1px solid rgb(156, 43, 43);
+    background-color: rgb(156, 43, 43);
+}
+
+.btn-edit:disabled,
+.btn-edit:hover:disabled {
+    opacity: 0.5
+}
+
+.PostDetails-btn-group-row {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+.PostDetails-error-text {
+    color: rgb(156, 43, 43);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .5);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .8);
+}
+
+@media screen and (min-width: 320px) {
+    .PostDetails-background {
+        min-height: calc(100vh - 52px);
+        top: 52px;
+    }
+
+    .PostDetails-column {
+        width: 275px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .PostDetails-background {
+        min-height: calc(100vh - 62px);
+        top: 62px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .PostDetails-column {
+        width: 500px;
+    }
+}

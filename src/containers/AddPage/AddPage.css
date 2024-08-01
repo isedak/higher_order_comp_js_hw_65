@@ -1,0 +1,31 @@
+.AddPage-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+.AddPage-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    min-width: 300px;
+    background-color: white;
+    border: 1px solid rgb(231, 241, 248);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.AddPage-title {
+    color: rgb(70, 70, 70);
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}

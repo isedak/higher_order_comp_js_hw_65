@@ -1,0 +1,81 @@
+.form-flex-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label {
+    font-size: 15px;
+    color: gray;
+    font-weight: 700;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.input-box {
+    padding: 9px;
+    border: 1px solid rgb(231, 241, 248);
+    border-radius: 2px;
+    outline: none;
+}
+
+.input-box:focus {
+    border: 1px solid rgb(177, 204, 223);
+}
+
+.textarea {
+    resize: none;
+    height: 300px;
+    padding: 9px;
+    border: 1px solid rgb(231, 241, 248);
+    border-radius: 2px;
+    outline: none;
+}
+
+.textarea:focus {
+    border: 1px solid rgb(177, 204, 223);
+}
+
+.btn-save {
+    border: 1px solid rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50);
+}
+
+.btn-save:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.btn-save:disabled,
+.btn-save:hover:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-group-row {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+    align-items: center;
+}
+
+.btn-cancel {
+    border: 1px solid rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100);
+}
+
+.btn-cancel:hover {
+    border: 1px solid rgb(60, 60, 60);
+    background-color: rgb(60, 60, 60);
+}
+
+.form-error-text {
+    color: rgb(156, 43, 43);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}

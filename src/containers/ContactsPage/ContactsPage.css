@@ -1,0 +1,117 @@
+.ContactsPage-background {
+    width: 100%;
+    min-height: calc(100vh - 62px);
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(106, 164, 239, 0.7), rgba(0, 0, 0, 0.9)), url("../../assets/img/background-contacts.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.ContactsPage-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.ContactsPage-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    font-size: 70px;
+    line-height: 70px;
+    cursor: default;
+}
+
+.ContactsPage-white-column {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 400px;
+}
+
+.ContactsPage-link-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contacts-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contacts-link:hover {
+    color: black;
+}
+
+.bold-upper-text {
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.phone-icon {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url("../../assets/img/icon-phone.svg")center /contain no-repeat;
+}
+
+.mail-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../assets/img/icon-mail.svg")center /contain no-repeat;
+}
+
+.location-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../assets/img/icon-location.svg")center /contain no-repeat;
+}
+
+@media screen and (min-width: 320px) {
+    .ContactsPage-title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .ContactsPage-white-column {
+        width: 240px;
+    }
+
+    .ContactsPage-background {
+        min-height: calc(100vh - 52px);
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .ContactsPage-title {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .ContactsPage-white-column {
+        width: 320px;
+    }
+
+    .ContactsPage-background {
+        min-height: calc(100vh - 62px);
+    }
+}

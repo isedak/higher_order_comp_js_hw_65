@@ -1,0 +1,82 @@
+.HomePage-container {
+    position: relative;
+}
+
+.HomePage-Posts-background {
+    width: 100%;
+    min-height: calc(100vh - 62px);
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(106, 164, 239, 0.5), rgba(0, 0, 0, 0.8)), url("../../assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.scroll-box {
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+.Posts-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.error-text {
+    color: rgb(156, 43, 43);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.black-error-text {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .5);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .8);
+}
+
+@media screen and (min-width: 320px) {
+    .HomePage-Posts-background {
+        min-height: calc(100vh - 52px);
+    }
+    .Posts-column {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .HomePage-Posts-background {
+        min-height: calc(100vh - 62px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Posts-column {
+        width: 540px;
+    }
+}

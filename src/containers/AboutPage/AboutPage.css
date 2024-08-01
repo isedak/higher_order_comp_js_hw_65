@@ -1,0 +1,101 @@
+.AboutPage-background {
+    width: 100%;
+    min-height: calc(100vh - 62px);
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(239, 159, 106, 0.7), rgba(0, 0, 0, 0.9)), url("../../assets/img/background-contacts.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.AboutPage-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.AboutPage-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    font-size: 70px;
+    line-height: 70px;
+    cursor: default;
+}
+
+.AboutPage-white-column {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 400px;
+}
+
+.AboutPage-lit {
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.AboutPage-body-text {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+@media screen and (min-width: 320px) {
+    .AboutPage-title {
+        font-size: 51px;
+        line-height: 51px;
+    }
+
+    .AboutPage-white-column {
+        width: 240px;
+    }
+
+    .AboutPage-body-text {
+        column-count: 1;
+    }
+
+    .AboutPage-background {
+        min-height: calc(100vh - 52px);
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .AboutPage-title {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .AboutPage-white-column {
+        width: 320px;
+    }
+
+    .AboutPage-background {
+        min-height: calc(100vh - 62px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .AboutPage-white-column {
+        width: 500px;
+    }
+
+    .AboutPage-body-text {
+        column-count: 2;
+    }
+    .AboutPage-title {
+        align-self: flex-start;
+    }
+}
